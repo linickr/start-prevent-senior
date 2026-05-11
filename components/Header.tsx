@@ -38,7 +38,7 @@ export default function Header() {
         </button>
 
         {/* Mobile: logos centralizadas (absolute) */}
-        <Link href="/" className="lg:hidden absolute left-1/2 -translate-x-1/2 flex items-center gap-3">
+        <Link href="/" className="lg:hidden absolute left-[44%] -translate-x-1/2 flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/prevent-senior-white.png"
