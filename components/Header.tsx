@@ -34,6 +34,7 @@ export default function Header() {
             src="/images/logo.png"
             alt="Start Corretora - Prevent Senior"
             className="h-10 md:h-14 w-auto"
+            style={{ mixBlendMode: 'screen' }}
           />
         </Link>
 

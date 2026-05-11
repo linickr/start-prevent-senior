@@ -12,12 +12,14 @@ export default function Footer() {
             src="/images/prevent-senior-white.png"
             alt="Prevent Senior"
             className="h-14 md:h-16 w-auto"
+            style={{ mixBlendMode: 'screen' }}
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/logo-start-white.png"
             alt="Start Corretora de Seguros"
             className="h-14 md:h-16 w-auto"
+            style={{ mixBlendMode: 'screen' }}
           />
         </div>
 
