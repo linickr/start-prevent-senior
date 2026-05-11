@@ -46,13 +46,21 @@ export default function HomePage() {
                 Receba um atendimento humanizado, que realmente preza por oferecer o seguro certo para sua vida.
               </p>
 
-              {/* Logo Prevent Senior (igual ao WP original, ao lado da cotação) */}
-              <div className="bg-white/5 backdrop-blur rounded-2xl p-6 mb-8 inline-block border border-white/10">
+              {/* Logos Prevent Senior + Start */}
+              <div className="flex items-center gap-8 mb-8">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/prevent-senior-white.png"
                   alt="Prevent Senior"
                   className="h-12 md:h-16 w-auto"
+                  style={{ mixBlendMode: 'screen' }}
+                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/logo-start-white.png"
+                  alt="Start Corretora de Seguros"
+                  className="h-12 md:h-16 w-auto"
+                  style={{ mixBlendMode: 'screen' }}
                 />
               </div>
 
@@ -85,12 +93,20 @@ export default function HomePage() {
             {/* Esquerda - Logos Start (como aparecem no WP) */}
             <div>
               <div className="flex flex-col gap-6">
-                <div className="bg-brand-blue rounded-2xl p-8 flex items-center justify-center">
+                <div className="bg-brand-blue rounded-2xl p-8 flex items-center justify-center gap-8">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/prevent-senior-white.png"
+                    alt="Prevent Senior"
+                    className="h-16 md:h-20 w-auto"
+                    style={{ mixBlendMode: 'screen' }}
+                  />
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/logo-start-white.png"
                     alt="Start Corretora de Seguros"
                     className="h-16 md:h-20 w-auto"
+                    style={{ mixBlendMode: 'screen' }}
                   />
                 </div>
 
@@ -305,7 +321,7 @@ export default function HomePage() {
                 Receba uma cotação ainda hoje:
               </p>
 
-              <div className="space-y-4">
+              <div className="space-y-4 mb-10">
                 {[
                   'Atendimento humanizado e profissional',
                   'Análise personalizada do seu perfil',
@@ -317,6 +333,24 @@ export default function HomePage() {
                     <span>{item}</span>
                   </div>
                 ))}
+              </div>
+
+              {/* Logos Prevent Senior + Start */}
+              <div className="flex items-center gap-8">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/prevent-senior-white.png"
+                  alt="Prevent Senior"
+                  className="h-12 md:h-14 w-auto"
+                  style={{ mixBlendMode: 'screen' }}
+                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/logo-start-white.png"
+                  alt="Start Corretora de Seguros"
+                  className="h-12 md:h-14 w-auto"
+                  style={{ mixBlendMode: 'screen' }}
+                />
               </div>
             </div>
 
