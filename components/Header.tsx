@@ -38,7 +38,7 @@ export default function Header() {
         </button>
 
         {/* Mobile: logos centralizadas (absolute) */}
-        <Link href="/" className="lg:hidden absolute left-[44%] -translate-x-1/2 flex items-center gap-3">
+        <Link href="/" className="lg:hidden absolute left-[44%] -translate-x-1/2 flex items-center gap-3 bg-[#0D2A4F]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/prevent-senior-white.png"
@@ -56,7 +56,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop: logos à esquerda */}
-        <Link href="/" className="hidden lg:flex items-center gap-6">
+        <Link href="/" className="hidden lg:flex items-center gap-6 bg-[#0D2A4F]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/prevent-senior-white.png"
