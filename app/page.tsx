@@ -321,7 +321,7 @@ export default function HomePage() {
                 Receba uma cotação ainda hoje:
               </p>
 
-              <div className="space-y-4 mb-10">
+              <div className="space-y-4">
                 {[
                   'Atendimento humanizado e profissional',
                   'Análise personalizada do seu perfil',
@@ -333,24 +333,6 @@ export default function HomePage() {
                     <span>{item}</span>
                   </div>
                 ))}
-              </div>
-
-              {/* Logos Prevent Senior + Start */}
-              <div className="flex items-center gap-8">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/prevent-senior-white.png"
-                  alt="Prevent Senior"
-                  className="h-12 md:h-14 w-auto"
-                  style={{ mixBlendMode: 'screen' }}
-                />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/logo-start-white.png"
-                  alt="Start Corretora de Seguros"
-                  className="h-12 md:h-14 w-auto"
-                  style={{ mixBlendMode: 'screen' }}
-                />
               </div>
             </div>
 
