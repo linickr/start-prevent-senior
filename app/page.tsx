@@ -18,7 +18,7 @@ export default function HomePage() {
           backgroundPosition: 'center',
         }}></div>
 
-        <div className="container-custom relative z-10">
+        <div className="container-custom relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* LADO ESQUERDO - Formulário de cotação */}
             <div id="agendeaqui" className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl order-2 lg:order-1">
@@ -308,7 +308,7 @@ export default function HomePage() {
           backgroundSize: 'cover',
         }}></div>
 
-        <div className="container-custom relative z-10">
+        <div className="container-custom relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <p className="text-brand-green font-semibold uppercase tracking-wider mb-3">
