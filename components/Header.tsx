@@ -26,25 +26,54 @@ export default function Header() {
         scrolled ? 'shadow-lg py-2' : 'py-3'
       }`}
     >
-      <div className="container-custom flex items-center justify-between">
-        {/* Logo combinada Prevent + Start (igual ao WordPress original) */}
-        <Link href="/" className="flex items-center gap-4 md:gap-6">
+      <div className="container-custom relative flex items-center justify-between">
+
+        {/* Mobile: hambúrguer à esquerda */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="lg:hidden text-white p-2 z-10"
+          aria-label="Menu"
+        >
+          {isOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
+        </button>
+
+        {/* Mobile: logos centralizadas (absolute) */}
+        <Link href="/" className="lg:hidden absolute left-1/2 -translate-x-1/2 flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/prevent-senior-white.png"
             alt="Prevent Senior"
-            className="h-8 md:h-11 w-auto"
+            className="h-11 w-auto"
             style={{ mixBlendMode: 'screen' }}
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/logo-start-white.png"
             alt="Start Corretora de Seguros"
-            className="h-8 md:h-11 w-auto"
+            className="h-11 w-auto"
             style={{ mixBlendMode: 'screen' }}
           />
         </Link>
 
+        {/* Desktop: logos à esquerda */}
+        <Link href="/" className="hidden lg:flex items-center gap-6">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/prevent-senior-white.png"
+            alt="Prevent Senior"
+            className="h-11 w-auto"
+            style={{ mixBlendMode: 'screen' }}
+          />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo-start-white.png"
+            alt="Start Corretora de Seguros"
+            className="h-11 w-auto"
+            style={{ mixBlendMode: 'screen' }}
+          />
+        </Link>
+
+        {/* Desktop: nav à direita */}
         <nav className="hidden lg:flex items-center gap-8">
           {navItems.map((item) => (
             <Link
@@ -66,15 +95,16 @@ export default function Header() {
           </a>
         </nav>
 
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden text-white p-2"
-          aria-label="Menu"
+        {/* Mobile: botão "Solicitar Cotação" à direita */}
+        <Link
+          href="/cotacao"
+          className="lg:hidden bg-brand-green hover:bg-brand-green-light text-brand-blue px-3 py-2 rounded font-bold text-xs z-10 whitespace-nowrap"
         >
-          {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-        </button>
+          Solicitar Cotação
+        </Link>
       </div>
 
+      {/* Menu mobile dropdown */}
       {isOpen && (
         <div className="lg:hidden bg-brand-blue-dark border-t border-white/10 animate-fade-in">
           <nav className="container-custom py-4 flex flex-col gap-4">
