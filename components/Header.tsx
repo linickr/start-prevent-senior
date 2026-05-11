@@ -28,12 +28,19 @@ export default function Header() {
     >
       <div className="container-custom flex items-center justify-between">
         {/* Logo combinada Prevent + Start (igual ao WordPress original) */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center gap-4 md:gap-6">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo.png"
-            alt="Start Corretora - Prevent Senior"
-            className="h-10 md:h-14 w-auto"
+            src="/images/prevent-senior-white.png"
+            alt="Prevent Senior"
+            className="h-8 md:h-11 w-auto"
+            style={{ mixBlendMode: 'screen' }}
+          />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo-start-white.png"
+            alt="Start Corretora de Seguros"
+            className="h-8 md:h-11 w-auto"
             style={{ mixBlendMode: 'screen' }}
           />
         </Link>
